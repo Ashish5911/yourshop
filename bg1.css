@@ -1,0 +1,48 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 70%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("html/1.jpg"); }
+.img2 { background-image: url("html/2.jpg"); }
+.img3 { background-image: url("html/10.jpg"); }
+.img4 { background-image: url("html/11.jpg"); }
+.img5 { background-image: url("html/12.jpg"); }
+.img6 { background-image: url("html/13.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+   /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border: 10px solid gray;
+  position: fixed; /* Stay fixed */
+  top: 50%;/*margin*/
+  left: 50%;
+  transform: translate(-50%, -50%);/*The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements
+  its works same as margin*/
+  z-index: 1;/*An element with greater stack order is always in front of an element with a lower stack order.*/
+  /*width: 300px;*/
+  padding: 40px;
+  text-align: center;
+}
+

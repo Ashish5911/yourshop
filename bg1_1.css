@@ -1,0 +1,92 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 70%;
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px; 
+}
+.bg-image2 {
+  /* Full height */
+  height: 50%;
+  width: 25%;
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px; 
+}
+/*.main{
+    display: flex;
+}*/
+
+/* Images used */
+.img1 { background-image: url("html/1.jpg");
+       border: 3px solid #ffffff;
+        width: 50%;
+}
+.img2 { background-image: url("html/2.jpg");
+       float: right;
+       position: absolute;
+       border: 3px solid #ffffff;
+       top: 0;
+       right: 0;
+       width: 50%;
+}
+.img3 { background-image: url("html/7.jpg");
+       position: relative;
+       border: 3px solid #ffffff;
+       }
+.img4 { background-image: url("html/12.jpg");
+       position: absolute;
+       border: 3px solid #ffffff;
+       top: 70%;
+       right: 0%;}
+.img5 { background-image: url("html/11.jpg");
+       position: absolute;
+       border: 3px solid #000000;
+       top: 70%;
+       right: 50%;}
+.img6 { background-image: url("html/10.jpg");
+       position: absolute;
+       border: 3px solid #ffffff;
+       top: 70%;
+       right: 25%;}
+.img7 { background-image: url("html/13.jpg");
+        padding-bottom: 15px;}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+   /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border: 10px solid gray;
+  position: fixed; /* Stay fixed */
+  top: 50%;/*margin*/
+  left: 50%;
+  transform: translate(-50%, -50%);/*The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements
+  its works same as margin*/
+  z-index: 1;/*An element with greater stack order is always in front of an element with a lower stack order.*/
+  /*width: 300px;*/
+  padding: 40px;
+  text-align: center;
+}
+

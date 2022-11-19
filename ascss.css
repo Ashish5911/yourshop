@@ -1,0 +1,30 @@
+.banner_image{
+background-image: url(intro.jpg);
+padding: 10% 4%;
+text-align:center;
+color:#f8f8f8;
+background-size:cover;
+width:100%;
+}
+.banner_content{
+position:relative;
+padding:6%;
+margin:10% 25% 6%;
+background-color:rgba(0,0,0,0.7);
+max-width:660px;
+}
+#togglePassword{
+margin-left:1px;
+cursor: pointer;
+}
+
+footer{
+padding:10px;
+background-color:#101010;
+color:#9d9d9d;
+width:100%;
+}
+
+a{
+text-decoration:none;
+}

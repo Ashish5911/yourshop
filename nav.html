@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><!-- CSS only -->
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style1.css">-->
+    <style>
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: grey;
+            padding: 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+        }
+        .logo{
+            position: absolute;
+            margin-left: 20px;
+        }
+        .list{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        
+        #toggler, .navbar label{
+            display: none;
+        }
+        a{
+            color: white;
+        }
+        button{
+            position: relative;
+            margin-right: 400px;
+            background-color: lightgreen;
+        }
+        input,button{
+            height: 35px;
+            border-radius: 5px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width:1200px){
+            button{
+                position: relative;
+                margin-right: 0px;
+            }
+        }
+        @media screen and (max-width:650px){
+            .menu{
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                background-color: black;
+                margin-top: 15px;
+             }
+            .list{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            .navbar label{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            i{
+                font-size: large;
+            }
+            
+            #toggler:checked ~ .menu{
+                max-height: 100%;
+            }
+           
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <a href="#" class="logo">LOGO</a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="glyphicon glyphicon-menu-hamburger"></i></label>
+            <div class="menu">
+                <ul class="list" >
+                    <li><input type="text" placeholder="Search here.." ><button>search</button></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
